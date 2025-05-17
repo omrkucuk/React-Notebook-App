@@ -1,12 +1,19 @@
-# React + Vite
+### Notebook-App (React, Context API, Material-UI)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Kişisel dijital not defteri uygulaması.
+- Kullanıcılar **kayıt olabiliyor** ve verileri **LocalStorage** üzerinde saklanıyor.
+- Giriş yapan kullanıcılar, **anasayfa** üzerinde tüm kullanıcıların paylaştığı notları görebiliyor. Notlar **kare kartlar** halinde listeleniyor.
+- Her not **Başlık, İçerik ve Kategori** olmak üzere üç alandan oluşuyor.
+- **Not ekleme** ve **arama** fonksiyonları mevcut. Navbar üzerindeki **arama kutusu** ile tüm notlar içinde anlık filtreleme yapılabiliyor.
+- Kullanıcılar **profil sayfasına** giderek sadece kendilerine ait notları görüntüleyebiliyor ve dilediklerini silebiliyor.
+- **Sayfa yönlendirmeleri için React Router yerine Context API ve Reducer yapısı** kullanıldı. Uygulama içindeki `currentPage` state’i context üzerinden kontrol edilerek sayfa geçişleri sağlandı.
+- Arayüz tasarımında **Material-UI** bileşenleri kullanıldı. Modern ve responsive tasarıma sahip.
+- **LocalStorage** kullanımı sayesinde veriler tarayıcıda kalıcı olarak saklanıyor ve uygulama offline kullanılabiliyor.
+- **Context API** üzerinden global state yönetimiyle kullanıcı, notlar ve sayfa geçiş durumları kontrol ediliyor.
 
-Currently, two official plugins are available:
+**Kullanılan Teknolojiler:** React, Context API, Reducer, LocalStorage, Material-UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Çalıştırmak için:
+```
+npm install
+npm run dev
